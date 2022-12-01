@@ -1,7 +1,7 @@
 * {
     margin:0; 
     padding:0;
-    box-sizing: inherit;
+    box-sizing:inherit;
 }
 
 html {
@@ -18,14 +18,34 @@ body {
     min-height: 100vh;
     background-color: #485fc7;
     color: #fff;
+   
+    display: flex;
     align-items: stretch;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .hero-body {
     align-items: center;
+    display: flex;
     flex-grow: 1;
-    flex-shrink: 0;
+    flex-shrink: 1;
     padding: 3rem 1.5rem;
 }
+
+@media screen and (min-width: 769px), print {
+    .hero-body {
+      padding: 3rem 3rem;
+    }
+  }
+  
+  section {
+    padding: 3rem 1.5rem;
+  }
+  
+  @media screen and (min-width: 1024px) {
+    section {
+      padding: 3rem 3rem;
+    }
+  }
